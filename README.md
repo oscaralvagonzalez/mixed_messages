@@ -5,6 +5,6 @@ Mixed messages is a portfolio project from backEnd course on Codecademy.
 
 Just dowload the project  and createa new project on VisualStudio. This required node.js 
 
-##Usage 
+## Usage 
 
 Just execute the file from the console to get a random message.

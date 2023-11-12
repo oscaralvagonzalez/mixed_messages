@@ -1,12 +1,12 @@
-const pronoum = ["You","Your","She"];
-const verb = ["will","should","find","experience"];
-const noum = ["some changes in your life","have a good time"];
+const messageData = {
+    pronoum: ['You','She','He'],
+    verb: ['will','should','find','experience'],
+    noum: ['some changes in your life','have a good time','and learn cashews come from a fruit']
+};
+let resultWord = [];
 
-let resultWord = []
+for (let phrase in messageData){
+    resultWord.push(messageData[phrase][Math.floor(Math.random() * messageData[phrase].length)]);    
+}
 
-resultWord.push(pronoum[Math.floor(Math.random() * pronoum.length)]);
-resultWord.push(verb[Math.floor(Math.random() * verb.length)]);
-resultWord.push(noum[Math.floor(Math.random() * noum.length)]);
-
-
-console.log(resultWord);
+console.log(resultWord.join(' '));
